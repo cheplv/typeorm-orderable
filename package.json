@@ -1,6 +1,6 @@
 {
   "name": "typeorm-orderable",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/typeorm-orderable.umd.cjs",
   "module": "./dist/typeorm-orderable.js",
