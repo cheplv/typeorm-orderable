@@ -5,7 +5,10 @@ This package solves problem with TypeORM column ordering - take a look:
 - [Set column position/order in addColumn](https://github.com/typeorm/typeorm/issues/6167)
 
 
-![GitHub](https://img.shields.io/github/license/cheplv/typeorm-orderable?style=flat-square)
+![GitHub](https://img.shields.io/github/license/cheplv/typeorm-orderable?style=flat)
+![Build](https://github.com/cheplv/typeorm-orderable/actions/workflows/main.yaml/badge.svg)
+![NPMJS](https://github.com/cheplv/typeorm-orderable/actions/workflows/publish.yaml/badge.svg)
+
 
 ## Usage
 
