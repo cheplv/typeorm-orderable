@@ -17,6 +17,11 @@
     "url": "git+https://github.com/cheplv/typeorm-orderable.git"
   },
   "keywords": ["typeorm", "decorator", "column", "order"],
+  "author": {
+    "name": "Yuri Tcherepanov",
+    "email": "cheplv@gmail.com",
+     "url": "https://github.com/cheplv"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsc && vite build",
