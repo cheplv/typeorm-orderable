@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
-import { resolve } from 'path';
-import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -12,12 +12,12 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['typeorm'],
-    }
+    },
   },
   plugins: [dts()],
   test: {
-    files: ['tests/**/*'],
+    includeSource: ['tests/**/*.spec.ts'],
     threads: false,
     testTimeout: 100000,
   },
-});
+})
