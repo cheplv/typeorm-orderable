@@ -1,5 +1,10 @@
 # TypeORM Decorators to provide field ordering in development and generation of migrations
 
+This package solves problem with TypeORM column ordering - take a look:
+- [Allow to order columns #541](https://github.com/typeorm/typeorm/issues/541)
+- [Set column position/order in addColumn](https://github.com/typeorm/typeorm/issues/6167)
+
+
 ![GitHub](https://img.shields.io/github/license/cheplv/typeorm-orderable?style=flat-square)
 
 ## Usage
