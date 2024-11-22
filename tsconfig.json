@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2016",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
+      "ES2016"
     ],
     "skipLibCheck": true,
     "moduleResolution": "bundler",
@@ -23,5 +21,5 @@
   },
   "include": [
     "src"
-  ]
+, "tests/test-entity.ts"  ]
 }

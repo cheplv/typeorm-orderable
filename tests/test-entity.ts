@@ -1,5 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryColumn } from 'typeorm'
-import { Order, Orderable } from './index'
+import { Order } from '../src/Order'
+import { Orderable } from '../src/Orderable'
 
 @Entity()
 @Orderable()

@@ -1,7 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryColumn } from 'typeorm'
 import { Order, Orderable } from '../src/index'
-import { TestEntity } from '../src/test-entity'
-
+import { TestEntity } from './test-entity'
 import { describe, expect, it } from 'vitest'
 
 describe('Order', () => {

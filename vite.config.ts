@@ -2,6 +2,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import { copyFileSync } from 'node:fs'
 
 export default defineConfig({
   build: {
@@ -9,16 +10,25 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'typeorm-orderable',
       formats: ['es', 'cjs'],
-      fileName: 'typeorm-orderable',
+      //fileName: 'typeorm-orderable',
+      fileName: 'index',
     },
     rollupOptions: {
       external: ['typeorm'],
     },
   },
-  plugins: [dts({ rollupTypes: true })],
+  plugins: [
+    dts({
+      rollupTypes: true,
+      //insertTypesEntry: true,
+      //include: ['src'],
+      afterBuild: () => {
+        copyFileSync('dist/index.d.ts', 'dist/index.d.cts')
+      },
+    }),
+  ],
   test: {
     includeSource: ['tests/**/*.spec.ts'],
-    threads: false,
     testTimeout: 100000,
   },
 })

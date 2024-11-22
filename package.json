@@ -1,19 +1,19 @@
 {
   "name": "typeorm-orderable",
   "version": "0.1.1",
+  "main": "./dist/index",
   "type": "module",
-  "main": "./dist/typeorm-orderable.cjs",
-  "module": "./dist/typeorm-orderable.js",
   "types": "./dist/index.d.ts",
-  "node": {
-    "import": "./dist/typeorm-orderable.js",
-    "require": "./dist/typeorm-orderable.cjs",
-    "types": "./dist/index.d.ts"
-  },
   "exports": {
     ".": {
-      "import": "./dist/typeorm-orderable.js",
-      "require": "./dist/typeorm-orderable.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "description": "Typeorm decorators to make columns orderable on table sql generation",
@@ -55,16 +55,14 @@
     "@changesets/cli": "^2.27.7",
     "@types/node": "^20.1.3",
     "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@vitest/browser": "^0.31.0",
-    "@vitest/coverage-c8": "^0.31.0",
     "eslint": "^8.57.1",
     "prettier": "^3.3.3",
     "rimraf": "^5.0.0",
     "typedoc": "^0.24.8",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2",
-    "vite-plugin-dts": "^2.3.0",
-    "vitest": "^0.31.0"
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.5"
   },
   "dependencies": {
     "typeorm": "^0.3.0"
