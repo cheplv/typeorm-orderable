@@ -2,13 +2,18 @@
   "name": "typeorm-orderable",
   "version": "0.1.0",
   "type": "module",
-  "main": "./dist/typeorm-orderable.umd.cjs",
+  "main": "./dist/typeorm-orderable.cjs",
   "module": "./dist/typeorm-orderable.js",
   "types": "./dist/index.d.ts",
+  "node": {
+    "import": "./dist/typeorm-orderable.js",
+    "require": "./dist/typeorm-orderable.cjs",
+    "types": "./dist/index.d.ts"
+  },
   "exports": {
     ".": {
       "import": "./dist/typeorm-orderable.js",
-      "require": "./dist/typeorm-orderable.umd.cjs"
+      "require": "./dist/typeorm-orderable.cjs"
     }
   },
   "description": "Typeorm decorators to make columns orderable on table sql generation",

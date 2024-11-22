@@ -8,13 +8,14 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'typeorm-orderable',
+      formats: ['es', 'cjs'],
       fileName: 'typeorm-orderable',
     },
     rollupOptions: {
       external: ['typeorm'],
     },
   },
-  plugins: [dts()],
+  plugins: [dts({ rollupTypes: true })],
   test: {
     includeSource: ['tests/**/*.spec.ts'],
     threads: false,
