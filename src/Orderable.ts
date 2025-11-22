@@ -44,6 +44,8 @@ export function Orderable(): ClassDecorator {
           },
         )
 
+        if (currentIndex < 0) return
+
         const currentField = getMetadataArgsStorage().columns.splice(
           currentIndex,
           1,
