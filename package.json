@@ -1,6 +1,6 @@
 {
   "name": "typeorm-orderable",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./dist/index",
   "type": "module",
   "types": "./dist/index.d.ts",
